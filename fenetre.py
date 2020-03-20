@@ -54,17 +54,20 @@ while affiche:
                 print("entrée")
             # si la touche préssée est la flèche du bas :
             if event.key == K_DOWN:
-                #position_perso.move(0, 3)
+                position_perso.move(0, 3)
                 print("bas")
             # si la touche préssée est la flèche droite :
             if event.key == K_RIGHT:
                 position_perso.move(3, 0)
+                print("droite")
             # si la touche préssée est la flèche du haut :
             if event.key == K_UP:
                 position_perso.move(0, -3)
+                print("haut")
             # si la touche préssée est la flèche gauche :
             if event.key == K_LEFT:
                 position_perso.move(-3, 0)
+                print("gauche")
 
     # recollage des personnages et du fond :
     fenetre.blit(fond, (0, 0))
